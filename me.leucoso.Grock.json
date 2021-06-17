@@ -1,7 +1,7 @@
 {
     "app-id": "me.leucoso.Grock",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.36",
+    "runtime-version": "40",
     "sdk": "org.gnome.Sdk",
     "command": "grock",
     "finish-args": [
@@ -58,8 +58,8 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/OSGeo/proj",
-                    "tag" : "7.1.0",
-                    "commit" : "76aed5878d64212f0ec5bbebad84aaeba4f7814b"
+                    "tag" : "7.2.1",
+                    "commit" : "1212e9b818e4511cc9389b9bdb5daa0bec1a12bd"
                 }
             ]
         },
