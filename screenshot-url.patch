@@ -1,0 +1,51 @@
+From 35a198f184a04f7022c7f996137f20ddb5a11c15 Mon Sep 17 00:00:00 2001
+From: bbhtt <62639087+bbhtt@users.noreply.github.com>
+Date: Wed, 3 Aug 2022 17:08:56 +0530
+Subject: [PATCH] Fix screenshot url
+
+---
+ data/me.leucoso.Grock.appdata.xml.in | 26 +-------------------------
+ 1 file changed, 1 insertion(+), 25 deletions(-)
+
+diff --git a/data/me.leucoso.Grock.appdata.xml.in b/data/me.leucoso.Grock.appdata.xml.in
+index 1575438..2ec4a0a 100644
+--- a/data/me.leucoso.Grock.appdata.xml.in
++++ b/data/me.leucoso.Grock.appdata.xml.in
+@@ -22,33 +22,9 @@
+   <developer_name>Daniel Burgess</developer_name>
+   <screenshots>
+     <screenshot type="default">
+-      <image>https://leucoso.me/grock/demo_screenshots/scr_main.png</image>
++      <image>https://codeberg.org/dburgess/Grock/media/branch/master/demo-images/demo.png</image>
+       <caption>Main Window</caption>
+     </screenshot>
+-    <screenshot>
+-      <image>https://leucoso.me/grock/demo_screenshots/scr_main2.png</image>
+-      <caption>Main Window</caption>
+-    </screenshot>
+-    <screenshot>
+-      <image>https://leucoso.me/grock/demo_screenshots/scr_features.png</image>
+-      <caption>View information about rocks by right clicking or doing a long tap</caption>
+-    </screenshot>
+-    <screenshot>
+-      <image>https://leucoso.me/grock/demo_screenshots/scr_sat.png</image>
+-      <caption>Superimpose the geology onto satellite imagery</caption>
+-    </screenshot>
+-    <screenshot>
+-      <image>https://leucoso.me/grock/demo_screenshots/scr_grav.png</image>
+-      <caption>View large-scale gravitational anomalies</caption>
+-    </screenshot>
+-    <screenshot>
+-      <image>https://leucoso.me/grock/demo_screenshots/scr_mag.png</image>
+-      <caption>View large-scale magnetic anomalies</caption>
+-    </screenshot>
+-    <screenshot>
+-      <image>https://leucoso.me/grock/demo_screenshots/scr_search.png</image>
+-      <caption>Search for a location by grid reference</caption>
+-    </screenshot>
+   </screenshots>
+   <content_rating type="oars-1.0" />
+ </component>
+-- 
+2.37.1
+
