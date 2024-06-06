@@ -14,12 +14,18 @@
     ],
     "cleanup": [
         "/include",
+        "/lib/cmake",
+        "/lib/girepository-1.0",
         "/lib/pkgconfig",
+        "/libexec",
         "/man",
         "/share/doc",
+        "/share/gir-1.0",
         "/share/gtk-doc",
+        "/share/installed-tests",
         "/share/man",
         "/share/pkgconfig",
+        "/share/vala",
         "*.la",
         "*.a"
     ],
