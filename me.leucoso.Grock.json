@@ -1,7 +1,7 @@
 {
     "app-id": "me.leucoso.Grock",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "command": "grock",
     "finish-args": [
@@ -62,14 +62,17 @@
         {
             "name" : "proj",
             "buildsystem" : "cmake-ninja",
+            "build-options": {
+                "cxxflags": "-Wno-error=implicit-function-declaration"
+            },
             "config-opts" : [
                 "-DBUILD_TESTING=OFF"
             ],
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://github.com/OSGeo/PROJ/releases/download/9.2.0/proj-9.2.0.tar.gz",
-                    "sha256" : "dea816f5aa732ae6b2ee3977b9bdb28b1d848cf56a1aad8faf6708b89f0ed50e"
+                    "url" : "https://github.com/OSGeo/PROJ/releases/download/9.7.1/proj-9.7.1.tar.gz",
+                    "sha256" : "6c097dc803c561929cdfcc46e4bf9945ea977611fb31493ad14e88edaeae260f"
                 }
             ]
         },
@@ -77,6 +80,9 @@
             "name": "grock",
             "builddir": true,
             "buildsystem": "meson",
+            "build-options": {
+                "cflags": "-Wno-error=implicit-function-declaration -Wno-error=incompatible-pointer-types"
+            },
             "sources": [
                 {
                     "type": "git",
